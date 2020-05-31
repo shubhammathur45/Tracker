@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Employee Tracker</string>
+    <string name="hint_userid">Enter User Id</string>
+    <string name="hint_userpassword">Enter Password</string>
+    <string name="tasklastdate">Task Last Date</string>
+    <string name="hint_email">Enter Email</string>
+    <string name="hint_enter_token">Enter Token</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

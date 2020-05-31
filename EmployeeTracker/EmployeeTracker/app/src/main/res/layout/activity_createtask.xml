@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/taskpanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_tasktitle"
+            android:hint="Enter Task Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/empolyeenamepanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_location"
+            android:hint="Enter Location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </android.support.design.widget.TextInputLayout>
+    <Button
+        android:id="@+id/tasklastdate"
+        style="@style/btnbg_style"
+        android:padding="10dp"
+        android:text="@string/tasklastdate"
+        />
+    <Spinner
+        android:id="@+id/spin_employess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Spinner>
+    <Button
+        android:id="@+id/btn_createtask"
+        android:text="Create Task"
+        style="@style/btnbg_style" />
+
+
+
+</LinearLayout>

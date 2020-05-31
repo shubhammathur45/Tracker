@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.employeetracker">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.FLASHLIGHT"
+        android:permissionGroup="android.permission-group.HARDWARE_CONTROLS"
+        android:protectionLevel="normal" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activities.FirstScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.EmployeeLogs"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activities.AdminDashBoard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.EmpTaskList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.AddEmployee"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.CreateTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.EmployeeDashBoard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.EmployeeList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.TaskList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.Employee_Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.UpdateAdminProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.UpdateAndDeleteEmpolyee"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ResetPassword"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.UpdateDeleteTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.EmpolyeeTaskList"
+            android:screenOrientation="portrait" />
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps"></activity>
+    </application>
+
+</manifest>

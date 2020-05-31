@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/bt_createmployee"
+        style="@style/btnbg_style"
+        android:text="Add Employee"
+        />
+    <Button
+        android:id="@+id/bt_viewemployees"
+        style="@style/btnbg_style"
+        android:text="View Employees"
+         />
+
+    <Button
+        android:id="@+id/bt_createtask"
+        android:text="Create Task"
+        style="@style/btnbg_style" />
+
+    <Button
+        android:id="@+id/bt_viewtasks"
+        style="@style/btnbg_style"
+        android:text="View Tasks"
+         />
+      <Button
+        android:id="@+id/bt_logs"
+        android:text="Track Employee"
+        style="@style/btnbg_style" />
+    <Button
+        android:id="@+id/bt_profile"
+        android:text="Your Profile"
+        style="@style/btnbg_style" />
+    <Button
+        android:id="@+id/bt_logout"
+        android:text="Logout"
+        style="@style/btnbg_style" />
+
+
+
+
+
+</LinearLayout>
